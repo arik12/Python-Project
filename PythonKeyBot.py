@@ -1,15 +1,17 @@
 
-import pyautogui 
-import time 
-pyautogui.FAILSAFE =  False
+import pyautogui  # Import pyautogui for automating keyboard/mouse actions
+import time        # Import time for adding delays
 
-for i in range(0,6):
+pyautogui.FAILSAFE = False  # Disable fail-safe (moving mouse to corner won't stop the script)
+
+# Loop 6 times
+for i in range(0, 6):
     
-    time.sleep(4)
-    pyautogui.press('j')
-    time.sleep(2)
-    pyautogui.press('l')
-    time.sleep(2)   
-    pyautogui.press('right')
-    time.sleep(2)
-    pyautogui.press('Enter')
+    time.sleep(4)          # Wait 4 seconds before starting each iteration
+    pyautogui.press('j')   # Simulate pressing the 'j' key
+    time.sleep(2)          # Wait 2 seconds
+    pyautogui.press('l')   # Simulate pressing the 'l' key
+    time.sleep(2)          # Wait 2 seconds
+    pyautogui.press('right')  # Simulate pressing the 'right arrow' key
+    time.sleep(2)          # Wait 2 seconds
+    pyautogui.press('Enter')  # Simulate pressing the 'Enter' key
